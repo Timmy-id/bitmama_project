@@ -61,7 +61,25 @@ body {
     pointer-events: auto;
 }
 
-.container .users-list {
+.logged-user p {
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+}
+
+.logged-user p span {
+    position: absolute;
+    color: tomato;
+    width: 70px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container .users-list, .container .logged-user {
     max-height: 250px;
     overflow-y: auto;
 }
@@ -75,6 +93,10 @@ body {
     border-radius: 3px;
     margin-bottom: 8px;
     padding: 0 15px;
+}
+
+.users-list li:first-child {
+    margin-top: 70px;
 }
 
 .users-list li span {
