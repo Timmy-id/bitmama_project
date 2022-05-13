@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #646464;
+}
+
+.container {
+    max-width: 600px;
+    background: white;
+    margin: 120px auto;
+    width: 100%;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.container h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container .input-section {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input-section input {
+    width: 80%;
+    outline: none;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+.input-section button {
+    width: 100px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: turquoise;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.input-section button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container .users-list {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.users-list li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+}
+
+.users-list li span {
+    position: absolute;
+    right: 0;
+    color: white;
+    width: 70px;
+    background: tomato;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
